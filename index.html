@@ -11,18 +11,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>Time/Date</title>
-    <script>
-        let a;
-        let date;
-        let time;
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        setInterval(() => {
-            a = new Date(); 
-            date = a.toLocaleDateString(undefined, options);
-            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
-            document.getElementById('time').innerHTML = time + "<br>on " + date;
-        }, 1000);
-    </script>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>       
